@@ -1,5 +1,6 @@
 package com.study.ocp.day03;
 
+import java.util.Arrays;
 import java.util.Iterator;
 
 public class StringDemo {
@@ -15,9 +16,8 @@ public class StringDemo {
 		System.out.println("off 的位置在:"  + words.indexOf("off"));
 		//有幾個字 ? 提示: split()
 		//把空白分隔
+		String[] wordArray = words.split(" ");
+		System.out.println(Arrays.toString(wordArray));
 		System.out.println(words.split(" ").length);
-		for(String o : words.split(" ")) {
-			System.out.println(o);
-		}
 	}
 }
